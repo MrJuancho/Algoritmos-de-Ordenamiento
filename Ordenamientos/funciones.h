@@ -15,28 +15,27 @@ void menu_i(){
            "Ingresa una opcion : ");
 }
 
-void metBur(int numeros[],int n)
+void metBur(int * const arreglo,const int tamanio)
 {
-    clock_t start = clock();
-    int i,j,c=0;
-    for(i=0;i<n;i++)
+    void intercambia( int *ptrElemento1, int *ptrElemento2 );
+    int pasada;
+    int j;
+    for ( pasada = 0; pasada < tamanio - 1; pasada++ )
     {
-        for(j=0;j<n;j++)
+        for ( j = 0; j < tamanio - 1; j++ )
         {
-            if(numeros[j]>numeros[j+1])
+            if ( arreglo[ j ] > arreglo[ j + 1 ] )
             {
-                    int aux = numeros[j];
-                    numeros[j] = numeros[j+1];
-                    numeros[j+1] = aux;
+                intercambia( &arreglo[ j ], &arreglo[ j + 1 ] );
             }
         }
     }
+    int c;
     printf("Tus numeros ordenados:\n");
-    for (c=0;c<n;c++)
+    for (c=0;c<tamanio;c++)
 	{
-		printf("%d\t",numeros[c]);
+		printf("%d\t",arreglo[c]);
 	}
-    printf("Tiempo transcurrido: %.8f", ((double)clock() - start) / CLOCKS_PER_SEC);
 }
 
 void ordenar_seleccion(int a[],int n)
@@ -63,8 +62,13 @@ void ordenar_seleccion(int a[],int n)
 	{
 		printf("%d\t",a[q]);
 	}
-    printf("Tiempo transcurrido: %.8f", ((double)clock() - start) / CLOCKS_PER_SEC);
-
 }
+
+void intercambia( int *ptrElemento1, int *ptrElemento2 ) {
+    int almacena = *ptrElemento1;
+    *ptrElemento1 = *ptrElemento2;
+    *ptrElemento2 = almacena;
+}
+
 
 #endif //ORDENAMIENTOS_FUNCIONES_H

@@ -13,6 +13,7 @@ double performancecounter_diff(LARGE_INTEGER *a, LARGE_INTEGER *b)
 
 int main() {
     int *arreglo;
+    double tiempos[5];
     int i;
     char m;
 
@@ -29,14 +30,20 @@ int main() {
                 scanf(" %c", &m);
                 switch (m) {
                     case '1':
+                        clock_t burbuja = clock();
                         metBur(arreglo, 10000);
-                        getch();
+                        tiempos[0] = ((double)clock() - burbuja)/CLOCKS_PER_SEC;
+                        printf("Tiempo transcurrido: %.5f\n", tiempos[0]);
+                        system("pause");
                         free(arreglo);
                         system("cls");
                         break;
                     case '2':
+                        clock_t seleccion = clock();
                         ordenar_seleccion(arreglo, 10000);
-                        getch();
+                        tiempos[1] = ((double)clock() - seleccion) / CLOCKS_PER_SEC;
+                        printf("Tiempo transcurrido: %.5f\n",tiempos[1]);
+                        system("pause");
                         free(arreglo);
                         system("cls");
                         break;
