@@ -41,6 +41,7 @@ void metBur(int numeros[],int n)
 
 void ordenar_seleccion(int a[],int n)
 {
+    clock_t start = clock();
 	int indiceMenor,i,j;
 	int q=0;
 
@@ -62,8 +63,7 @@ void ordenar_seleccion(int a[],int n)
 	{
 		printf("%d\t",a[q]);
 	}
-	clock_t start = clock();
-    printf("Tiempo transcurrido: %.16f", ((double)clock() - start) / CLOCKS_PER_SEC);
+    printf("Tiempo transcurrido: %.8f", ((double)clock() - start) / CLOCKS_PER_SEC);
 
 }
 
