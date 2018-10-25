@@ -22,6 +22,7 @@ int main()
         arreglo[i] = 1+ rand() % ((150000+1)-1);
         printf("%d",arreglo[i]);
     }
+    printf("\n");
     char m;
     menu_i();
     clock_t start = clock();
