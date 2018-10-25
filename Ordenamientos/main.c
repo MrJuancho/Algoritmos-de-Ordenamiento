@@ -44,18 +44,11 @@ int main() {
                         }
                         break;
                     case '3':
-                        clock_t start = clock();
-                        insercion(arreglo, 10000);
-                        tiempos[2] = ((double)clock() - start) / CLOCKS_PER_SEC;
-                        printf("Tiempo transcurrido: %.5f\n", tiempos[2]);
-                        system("pause");
-                        free(arreglo);
-                        system("cls");
                         {
                             clock_t start = clock();
                             insercion(arreglo, 10000);
                             tiempos[2] = ((double)clock() - start) / CLOCKS_PER_SEC;
-                            printf("Tiempo transcurrido: %.5f", tiempos[2]);
+                            printf("Tiempo transcurrido: %.5f\n", tiempos[2]);
                             system("pause");
                             free(arreglo);
                             system("cls");
@@ -72,16 +65,11 @@ int main() {
                                 printf("%d\t",arreglo[j]);
                             }
                             printf("\n");
-                            printf("Tiempo transcurrido: %.5f", tiempos[3]);
+                            printf("Tiempo transcurrido: %.5f\n", tiempos[3]);
                             system("pause");
                             free(arreglo);
                             system("cls");
                         }
-                        printf("\n");
-                        printf("Tiempo transcurrido: %.5f\n", tiempos[3]);
-                        system("pause");
-                        free(arreglo);
-                        system("cls");
                         break;
                     case '5':
                         {
