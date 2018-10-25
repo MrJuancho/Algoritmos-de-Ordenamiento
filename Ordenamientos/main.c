@@ -16,8 +16,7 @@ int main()
     arreglo = (int*)malloc(10000* sizeof(int));
 
     clock_t start = clock();
-    printf("Hola cara de bola te apesta la cola\n");
-    printf("Tiempo transcurrido: %f", ((double)clock() - start) / CLOCKS_PER_SEC);
+        printf("Tiempo transcurrido: %f", ((double)clock() - start) / CLOCKS_PER_SEC);
 
     return 0;
 }
