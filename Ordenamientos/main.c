@@ -24,7 +24,26 @@ int main()
     }
     printf("\n");
     char m;
-    menu_i();
+    do {
+        menu_i();
+        scanf("%c",&m);
+        switch (m){
+            case '1':
+                break;
+            case '2':
+                break;
+            case '3':
+                break;
+            case '4':
+                break;
+            case '5':
+                break;
+            case '0':
+                break;
+            default:
+                break;
+        }
+    }while(m != '0');
     clock_t start = clock();
     printf("Tiempo transcurrido: %f", ((double)clock() - start) / CLOCKS_PER_SEC);
 
