@@ -67,13 +67,15 @@ int main() {
                             printf("\n");
                             printf("Tiempo transcurrido: %.5f\n", tiempos[3]);
                             system("pause");
-                            free(arreglo);
                             system("cls");
                         }
                         break;
                     case '5':
                         {
+                            clock_t shell_t = clock();
+                            tiempos[4] = ((double)clock() - shell_t) / CLOCKS_PER_SEC;
                             shell(arreglo, 10000);
+                            printf("Tiempo transcurrido: %.15f\n", tiempos[4]);
                             system("pause");
                             free(arreglo);
                             system("cls");
@@ -81,9 +83,14 @@ int main() {
                         break;
                     case '0':
                         printf("Adius");
+                        system("pause");
                         break;
                     default:
+<<<<<<< HEAD
                         printf("Intenta una opcion valida");
+=======
+                        printf("Intenta una opcion valida pequenio niels");
+>>>>>>> 9aead12e0785a09218b7017d9dd67306f1681a6f
                         break;
                 }
         }
