@@ -2,6 +2,8 @@
 #define ORDENAMIENTOS_FUNCIONES_H
 
 #include <stdio.h>
+#include <time.h>
+#include <windows.h>
 
 double performancecounter_diff(LARGE_INTEGER *a, LARGE_INTEGER *b)
 {
