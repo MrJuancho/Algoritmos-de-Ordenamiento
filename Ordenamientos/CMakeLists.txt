@@ -3,4 +3,4 @@ project(Ordenamientos C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(Ordenamientos main.c)
+add_executable(Ordenamientos main.c funciones.h)

@@ -84,6 +84,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/MrJua/Documents/GitHub/Algoritmos-de-Ordenamiento/Ordenamientos/funciones.h">
+			<Option target="Ordenamientos"/>
+		</Unit>
 		<Unit filename="C:/Users/MrJua/Documents/GitHub/Algoritmos-de-Ordenamiento/Ordenamientos/main.c">
 			<Option target="Ordenamientos"/>
 		</Unit>
