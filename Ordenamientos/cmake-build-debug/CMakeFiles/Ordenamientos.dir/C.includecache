@@ -13,6 +13,8 @@ time.h
 -
 windows.h
 -
+conio.h
+-
 
 C:/Users/MrJua/Documents/GitHub/Algoritmos-de-Ordenamiento/Ordenamientos/main.c
 stdio.h
@@ -20,8 +22,6 @@ stdio.h
 stdlib.h
 -
 time.h
--
-windows.h
 -
 funciones.h
 C:/Users/MrJua/Documents/GitHub/Algoritmos-de-Ordenamiento/Ordenamientos/funciones.h

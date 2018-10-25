@@ -1,15 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <windows.h>
 #include "funciones.h"
-
-double performancecounter_diff(LARGE_INTEGER *a, LARGE_INTEGER *b)
-{
-    LARGE_INTEGER freq;
-    QueryPerformanceFrequency(&freq);
-    return (double)(a->QuadPart - b->QuadPart) / (double)freq.QuadPart;
-}
 
 int main() {
     int *arreglo;
@@ -48,12 +40,27 @@ int main() {
                         system("cls");
                         break;
                     case '3':
+                        clock_t start = clock();
                         insercion(arreglo, 10000);
-                        getch();
+                        tiempos[2] = ((double)clock() - start) / CLOCKS_PER_SEC;
+                        printf("Tiempo transcurrido: %.5f", tiempos[2]);
+                        system("pause");
                         free(arreglo);
                         system("cls");
                         break;
                     case '4':
+                        clock_t quick_sort = clock();
+                        quickSort(arreglo,0,10000);
+                        tiempos[3] = ((double)clock() - quick_sort) / CLOCKS_PER_SEC;
+                        printf("Tus numeros ordenados son:\n");
+                        for (int j = 0; j < 10000 ; ++j) {
+                            printf("%d\t",arreglo[j]);
+                        }
+                        printf("\n");
+                        printf("Tiempo transcurrido: %.5f", tiempos[3]);
+                        system("pause");
+                        free(arreglo);
+                        system("cls");
                         break;
                     case '5':
                         break;

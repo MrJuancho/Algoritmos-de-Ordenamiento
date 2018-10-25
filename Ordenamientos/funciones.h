@@ -41,7 +41,6 @@ void metBur(int * const arreglo,const int tamanio)
 
 void ordenar_seleccion(int a[],int n)
 {
-    clock_t start = clock();
 	int indiceMenor,i,j;
 	int q=0;
 
@@ -71,7 +70,6 @@ void intercambia( int *ptrElemento1, int *ptrElemento2 ) {
     *ptrElemento2 = almacena;
 }
 
-<<<<<<< HEAD
 void insercion(int a[],int tam)
 {
     clock_t start = clock();
@@ -90,11 +88,34 @@ void insercion(int a[],int tam)
     {
         printf("%d\t",a[k]);
     }printf("\n");
-    printf("Tiempo transcurrido: %.8f", ((double)clock() - start) / CLOCKS_PER_SEC);
 }
 
-#endif //ORDENAMIENTOS_FUNCIONES_H
-=======
+int particion(int arr[], int min, int max)
+{
+    int pivot = arr[max];
+    int i = (min - 1);
+
+    for (int j = min; j <= max- 1; j++)
+    {
+        if (arr[j] <= pivot)
+        {
+            i++;
+            intercambia(&arr[i], &arr[j]);
+        }
+    }
+    intercambia(&arr[i + 1], &arr[max]);
+    return (i + 1);
+}
+
+void quickSort(int arr[], int min, int max)
+{
+    if (min < max)
+    {
+        int pi = particion(arr, min, max);
+        quickSort(arr, min, pi - 1);
+        quickSort(arr, pi + 1, max);
+    }
+}
+
 
 #endif //ORDENAMIENTOS_FUNCIONES_H
->>>>>>> a9d5e20a4958eb70f53164b7944e866abcf7dd7e
