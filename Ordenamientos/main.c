@@ -20,6 +20,7 @@ int main()
     for(i=0;i<10000;i++)
     {
         arreglo[i] = 1+ rand() % ((150000+1)-1);
+        printf("%d",arreglo[i]);
     }
     char m;
     menu_i();
