@@ -83,7 +83,7 @@ int main() {
                         printf("Adius");
                         break;
                     default:
-                        printf("Intenta una opcion valida peque�o nils");
+                        printf("Intenta una opcion valida");
                         break;
                 }
         }
