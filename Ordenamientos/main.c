@@ -6,7 +6,29 @@
 int main()
 {
     printf("-A L G O R I T M O S   D E    O R D E N A M I E N T O-\n");
-    printf("Si esto jala ya estamos");
+
 
     return 0;
 }
+
+/*#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <windows.h>
+
+double performancecounter_diff(LARGE_INTEGER *a, LARGE_INTEGER *b)
+{
+  LARGE_INTEGER freq;
+  QueryPerformanceFrequency(&freq);
+  return (double)(a->QuadPart - b->QuadPart) / (double)freq.QuadPart;
+}
+
+int main()
+{
+    clock_t start = clock();
+    printf("Hola cara de bola te apesta la cola\n");
+    printf("Tiempo transcurrido: %f", ((double)clock() - start) / CLOCKS_PER_SEC);
+
+    return 0;
+}
+*/
