@@ -30,6 +30,12 @@ int main()
         scanf("%c",&m);
         switch (m){
             case '1':
+                ordenaMBurbuja(arreglo,10000);
+                printf("Arreglo Ordenado es: \n");
+                for (int j = 0; j < 10000; ++j) {
+                    printf("%d",arreglo[j]);
+                }
+                free(arreglo);
                 break;
             case '2':
                 break;

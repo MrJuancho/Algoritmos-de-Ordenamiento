@@ -16,6 +16,29 @@ void menu_i(){
            "0 >> Salir.");
 }
 
+void ordenaMBurbuja( int * const arreglo, const int tamanio )
+{
+    void intercambia( int *ptrElemento1, int *ptrElemento2 );
+    int pasada;
+    int j;
+    for ( pasada = 0; pasada < tamanio - 1; pasada++ )
+    {
+        for ( j = 0; j < tamanio - 1; j++ )
+        {
+            if ( arreglo[ j ] > arreglo[ j + 1 ] )
+            {
+                intercambia( &arreglo[ j ], &arreglo[ j + 1 ] );
+            }
+        }
+    }
+}
+
+void intercambia( int *ptrElemento1, int *ptrElemento2 ) {
+    int almacena = *ptrElemento1;
+    *ptrElemento1 = *ptrElemento2;
+    *ptrElemento2 = almacena;
+}
+
 
 
 #endif //ORDENAMIENTOS_FUNCIONES_H
