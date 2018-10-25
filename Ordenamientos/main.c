@@ -4,6 +4,13 @@
 #include <windows.h>
 #include "funciones.h"
 
+double performancecounter_diff(LARGE_INTEGER *a, LARGE_INTEGER *b)
+{
+    LARGE_INTEGER freq;
+    QueryPerformanceFrequency(&freq);
+    return (double)(a->QuadPart - b->QuadPart) / (double)freq.QuadPart;
+}
+
 int main()
 {
     int *arreglo;
@@ -20,14 +27,16 @@ int main()
     char m;
     do {
         menu_i();
-        scanf("%c",&m);
+        scanf(" %c",&m);
         switch (m){
             case '1':
+                clock_t start = clock();
                 ordenaMBurbuja(arreglo,10000);
                 printf("Arreglo Ordenado es: \n");
                 for (int j = 0; j < 10000; ++j) {
                     printf("%d\t",arreglo[j]);
                 }
+                printf("\nTiempo transcurrido: %f", ((double)clock() - start) / CLOCKS_PER_SEC);
                 free(arreglo);
                 break;
             case '2':
