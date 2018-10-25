@@ -92,7 +92,7 @@ int main() {
                         for (int l = 0; l < 5; ++l) {
                             printf("Tiempo %d : %.5f\n",(l+1),tiempos[l]);
                         }
-                        printf("MADE BY:\n"
+                        printf("\n\nMADE BY:\n"
                                "Alvarez Garcia Elian Alexander\n"
                                "Calderon Davila Juan Carlos\n"
                                "Catarino Corralco Carlos Alberto\n"
