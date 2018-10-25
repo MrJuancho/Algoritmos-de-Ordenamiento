@@ -4,12 +4,7 @@
 #include <windows.h>
 #include "funciones.h"
 
-double performancecounter_diff(LARGE_INTEGER *a, LARGE_INTEGER *b)
-{
-  LARGE_INTEGER freq;
-  QueryPerformanceFrequency(&freq);
-  return (double)(a->QuadPart - b->QuadPart) / (double)freq.QuadPart;
-}
+
 
 int main()
 {
@@ -51,8 +46,6 @@ int main()
                 break;
         }
     }while(m != '0');
-    clock_t start = clock();
-    printf("Tiempo transcurrido: %f", ((double)clock() - start) / CLOCKS_PER_SEC);
 
     return 0;
 }

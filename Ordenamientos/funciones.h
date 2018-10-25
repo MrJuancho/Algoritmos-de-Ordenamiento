@@ -1,11 +1,9 @@
-//
-// Created by MrJua on 25/10/2018.
-//
-
-#ifndef ORDENAMIENTOS_FUNCIONES_H
-#define ORDENAMIENTOS_FUNCIONES_H
-
-#include <stdio.h>
+double performancecounter_diff(LARGE_INTEGER *a, LARGE_INTEGER *b)
+{
+  LARGE_INTEGER freq;
+  QueryPerformanceFrequency(&freq);
+  return (double)(a->QuadPart - b->QuadPart) / (double)freq.QuadPart;
+}
 
 void menu_i(){
     printf("1 >> Ordenamiento Burbuja.\n"
@@ -31,6 +29,9 @@ void ordenaMBurbuja( int * const arreglo, const int tamanio )
             }
         }
     }
+    clock_t start = clock();
+    printf("Tiempo transcurrido: %f", ((double)clock() - start) / CLOCKS_PER_SEC);
+
 }
 
 void intercambia( int *ptrElemento1, int *ptrElemento2 ) {
@@ -61,6 +62,9 @@ void ordenar_seleccion(int a[],int n)
 	{
 		printf("%d\t",a[q]);
 	}
+	clock_t start = clock();
+    printf("Tiempo transcurrido: %f", ((double)clock() - start) / CLOCKS_PER_SEC);
+
 }
 
 
