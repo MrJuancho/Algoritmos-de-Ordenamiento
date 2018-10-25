@@ -33,7 +33,7 @@ int main()
                 ordenaMBurbuja(arreglo,10000);
                 printf("Arreglo Ordenado es: \n");
                 for (int j = 0; j < 10000; ++j) {
-                    printf("%d",arreglo[j]);
+                    printf("%d\t",arreglo[j]);
                 }
                 free(arreglo);
                 break;
