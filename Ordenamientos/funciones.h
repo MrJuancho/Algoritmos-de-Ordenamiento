@@ -5,8 +5,6 @@
 #include <time.h>
 #include <windows.h>
 
-
-
 void menu_i(){
     printf("1 >> Ordenamiento Burbuja.\n"
            "2 >> Ordenamiento por Seleccion.\n"
@@ -17,28 +15,28 @@ void menu_i(){
            "Ingresa una opcion : ");
 }
 
-void ordenaMBurbuja( int * const arreglo, const int tamanio )
+void metBur(int numeros[],int n)
 {
-    void intercambia( int *ptrElemento1, int *ptrElemento2 );
-    int pasada;
-    int j;
-    for ( pasada = 0; pasada < tamanio - 1; pasada++ )
+    clock_t start = clock();
+    int i,j,c=0;
+    for(i=0;i<n;i++)
     {
-        for ( j = 0; j < tamanio - 1; j++ )
+        for(j=0;j<n;j++)
         {
-            if ( arreglo[ j ] > arreglo[ j + 1 ] )
+            if(numeros[j]>numeros[j+1])
             {
-                intercambia( &arreglo[ j ], &arreglo[ j + 1 ] );
+                    int aux = numeros[j];
+                    numeros[j] = numeros[j+1];
+                    numeros[j+1] = aux;
             }
         }
     }
-
-}
-
-void intercambia( int *ptrElemento1, int *ptrElemento2 ) {
-    int almacena = *ptrElemento1;
-    *ptrElemento1 = *ptrElemento2;
-    *ptrElemento2 = almacena;
+    printf("Tus numeros ordenados:\n");
+    for (c=0;c<n;c++)
+	{
+		printf("%d\t",numeros[c]);
+	}
+    printf("Tiempo transcurrido: %.8f", ((double)clock() - start) / CLOCKS_PER_SEC);
 }
 
 void ordenar_seleccion(int a[],int n)
@@ -59,12 +57,13 @@ void ordenar_seleccion(int a[],int n)
 				a[indiceMenor]=aux;
 			}
         }
+        printf("Tus numeros ordenados son:\n");
 	for (q=0;q<n;q++)
 	{
 		printf("%d\t",a[q]);
 	}
 	clock_t start = clock();
-    printf("Tiempo transcurrido: %f", ((double)clock() - start) / CLOCKS_PER_SEC);
+    printf("Tiempo transcurrido: %.16f", ((double)clock() - start) / CLOCKS_PER_SEC);
 
 }
 

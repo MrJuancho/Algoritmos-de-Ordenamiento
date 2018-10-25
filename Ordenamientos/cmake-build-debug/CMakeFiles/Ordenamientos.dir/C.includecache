@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/MrJua/Documents/GitHub/Algoritmos-de-Ordenamiento/Ordenamientos/funciones.h
+stdio.h
+-
+time.h
+-
+windows.h
+-
+
+C:/Users/MrJua/Documents/GitHub/Algoritmos-de-Ordenamiento/Ordenamientos/main.c
+stdio.h
+-
+stdlib.h
+-
+time.h
+-
+windows.h
+-
+funciones.h
+C:/Users/MrJua/Documents/GitHub/Algoritmos-de-Ordenamiento/Ordenamientos/funciones.h
+
