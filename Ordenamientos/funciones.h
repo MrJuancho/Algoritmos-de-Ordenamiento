@@ -39,6 +39,30 @@ void intercambia( int *ptrElemento1, int *ptrElemento2 ) {
     *ptrElemento2 = almacena;
 }
 
+void ordenar_seleccion(int a[],int n)
+{
+	int indiceMenor,i,j;
+	int q=0;
+
+	for(i=0;i<n-1;i++)
+        {
+		indiceMenor=i;
+		for(j=i+1;j<n;j++)
+			if(a[j]<a[indiceMenor])
+			indiceMenor=j;
+			if(i!=indiceMenor)
+			{
+				double aux=a[i];
+				a[i]=a[indiceMenor];
+				a[indiceMenor]=aux;
+			}
+        }
+	for (q=0;q<n;q++)
+	{
+		printf("%d\t",a[q]);
+	}
+}
+
 
 
 #endif //ORDENAMIENTOS_FUNCIONES_H
