@@ -86,11 +86,7 @@ int main() {
                         system("pause");
                         break;
                     default:
-<<<<<<< HEAD
                         printf("Intenta una opcion valida");
-=======
-                        printf("Intenta una opcion valida pequenio niels");
->>>>>>> 9aead12e0785a09218b7017d9dd67306f1681a6f
                         break;
                 }
         }
