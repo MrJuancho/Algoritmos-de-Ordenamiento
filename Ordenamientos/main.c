@@ -41,7 +41,10 @@ int main() {
                         system("cls");
                         break;
                     case '3':
-
+                        insercion(arreglo, 10000);
+                        getch();
+                        free(arreglo);
+                        system("cls");
                         break;
                     case '4':
                         break;

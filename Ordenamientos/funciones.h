@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <time.h>
 #include <windows.h>
+#include <conio.h>
 
 void menu_i(){
     printf("1 >> Ordenamiento Burbuja.\n"
@@ -65,6 +66,27 @@ void ordenar_seleccion(int a[],int n)
 	}
     printf("Tiempo transcurrido: %.8f", ((double)clock() - start) / CLOCKS_PER_SEC);
 
+}
+
+void insercion(int a[],int tam)
+{
+    clock_t start = clock();
+    int i,j,k,val=0;
+    for(i=1;i<tam;i++)
+    {
+        val = a[i];
+        for(j=i-1;j>=0&&a[j]>val;j--)
+        {
+            a[j+1]=a[j];
+        }
+        a[j+1]=val;
+    }
+    printf("Tus numeros ordenados son:\n");
+    for(k=0;k<tam;k++)
+    {
+        printf("%d\t",a[k]);
+    }printf("\n");
+    printf("Tiempo transcurrido: %.8f", ((double)clock() - start) / CLOCKS_PER_SEC);
 }
 
 #endif //ORDENAMIENTOS_FUNCIONES_H
