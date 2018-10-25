@@ -41,7 +41,6 @@ void metBur(int * const arreglo,const int tamanio)
 
 void ordenar_seleccion(int a[],int n)
 {
-
 	int indiceMenor,i,j;
 	int q=0;
 
@@ -89,7 +88,6 @@ void insercion(int a[],int tam)
     {
         printf("%d\t",a[k]);
     }printf("\n");
-
 }
 
 void shell(int a[],int n)
@@ -119,5 +117,32 @@ void shell(int a[],int n)
     printf("\n");
 }
 
-#endif //ORDENAMIENTOS_FUNCIONES_H
 
+int particion(int arr[], int min, int max)
+{
+    int pivot = arr[max];
+    int i = (min - 1);
+
+    for (int j = min; j <= max- 1; j++)
+    {
+        if (arr[j] <= pivot)
+        {
+            i++;
+            intercambia(&arr[i], &arr[j]);
+        }
+    }
+    intercambia(&arr[i + 1], &arr[max]);
+    return (i + 1);
+}
+
+void quickSort(int arr[], int min, int max)
+{
+    if (min < max)
+    {
+        int pi = particion(arr, min, max);
+        quickSort(arr, min, pi - 1);
+        quickSort(arr, pi + 1, max);
+    }
+}
+
+#endif //ORDENAMIENTOS_FUNCIONES_H
