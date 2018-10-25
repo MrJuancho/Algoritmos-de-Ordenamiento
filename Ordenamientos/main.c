@@ -13,10 +13,16 @@ double performancecounter_diff(LARGE_INTEGER *a, LARGE_INTEGER *b)
 int main()
 {
     int *arreglo;
+    int i;
     arreglo = (int*)malloc(10000* sizeof(int));
+    srand(time(NULL));
+    for(i=0;i<10000;i++)
+    {
+        arreglo[i] = 1+ rand() % ((150000+1)-1);
+    }
 
     clock_t start = clock();
-        printf("Tiempo transcurrido: %f", ((double)clock() - start) / CLOCKS_PER_SEC);
+    printf("Tiempo transcurrido: %f", ((double)clock() - start) / CLOCKS_PER_SEC);
 
     return 0;
 }
