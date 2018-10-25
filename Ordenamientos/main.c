@@ -17,10 +17,11 @@ int main()
     int i;
     arreglo = (int*)malloc(10000* sizeof(int));
     srand(time(NULL));
+    printf("Tu arreglo sin ordenar es el siguiente: \n")
     for(i=0;i<10000;i++)
     {
         arreglo[i] = 1+ rand() % ((150000+1)-1);
-        printf("%d",arreglo[i]);
+        printf("%d\t",arreglo[i]);
     }
     printf("\n");
     char m;
