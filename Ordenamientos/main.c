@@ -102,6 +102,8 @@ int main() {
                     default:
                         printf("Intenta una opcion valida.");
                         system("pause");
+                        system("cls");
+                        fflush(stdin);
                         break;
                 }
         }
