@@ -118,7 +118,7 @@ void shell(int a[],int n)
 }
 
 
-int particion(int arr[], int min, int max)
+int particion(int * const arr, int const min, int const max)
 {
     int pivot = arr[max];
     int i = (min - 1);
@@ -135,7 +135,7 @@ int particion(int arr[], int min, int max)
     return (i + 1);
 }
 
-void quickSort(int arr[], int min, int max)
+void quickSort(int * const arr, int min, int max)
 {
     if (min < max)
     {
