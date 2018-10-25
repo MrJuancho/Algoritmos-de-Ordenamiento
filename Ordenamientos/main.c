@@ -14,7 +14,8 @@ int main() {
         arreglo = (int *) malloc(10000 * sizeof(int));
         srand(time(NULL));
         printf("Tu arreglo sin ordenar es el siguiente: \n");
-        for (i = 0; i < 10000; i++) {
+        for (i = 0; i < 10000; i++)
+        {
             arreglo[i] = 1 + rand() % ((1558941 + 1) - 1);
             printf("%d\t", arreglo[i]);
         }
