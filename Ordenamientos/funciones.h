@@ -68,6 +68,4 @@ void ordenar_seleccion(int a[],int n)
 
 }
 
-
-
 #endif //ORDENAMIENTOS_FUNCIONES_H
