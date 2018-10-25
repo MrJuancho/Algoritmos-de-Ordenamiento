@@ -11,7 +11,8 @@ void menu_i(){
            "3 >> Ordenamiento por Inserccion.\n"
            "4 >> Ordenamiento QuickSort.\n"
            "5 >> Ordenamiento Shell.\n"
-           "0 >> Salir.");
+           "0 >> Salir.\n"
+           "Ingresa una opcion : ");
 }
 
 void ordenaMBurbuja( int * const arreglo, const int tamanio )
