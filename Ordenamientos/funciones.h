@@ -1,3 +1,8 @@
+#ifndef //ORDENAMIENTOS_FUNCIONES_H
+#define //ORDENAMIENTOS_FUNCIONES_H
+
+#include <stdio.h>
+
 double performancecounter_diff(LARGE_INTEGER *a, LARGE_INTEGER *b)
 {
   LARGE_INTEGER freq;

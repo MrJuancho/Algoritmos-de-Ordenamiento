@@ -4,8 +4,6 @@
 #include <windows.h>
 #include "funciones.h"
 
-
-
 int main()
 {
     int *arreglo;
