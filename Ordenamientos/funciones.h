@@ -72,7 +72,7 @@ void intercambia( int *ptrElemento1, int *ptrElemento2 ) {
 
 void insercion(int a[],int tam)
 {
-    clock_t start = clock();
+
     int i,j,k,val=0;
     for(i=1;i<tam;i++)
     {
@@ -89,6 +89,34 @@ void insercion(int a[],int tam)
         printf("%d\t",a[k]);
     }printf("\n");
 }
+
+void shell(int a[],int n)
+{
+    int i,j,k,aux;
+    k= n/2;
+    while(k>0)
+    {
+        for(i=k;i<n;i++)
+        {
+            j=i;
+            aux = a[i];
+            while((j>=k)&&(a[j-k]>aux))
+            {
+                a[j]=a[j-k];
+                j=j-k;
+            }
+            a[j]=aux;
+        }
+        k /=2;
+    }
+    printf("Tu arreglo ordenado es:\n");
+    for(int q=0;q<n;q++)
+    {
+        printf("%d\t",a[q]);
+    }
+    printf("\n");
+}
+
 
 int particion(int arr[], int min, int max)
 {
@@ -116,6 +144,5 @@ void quickSort(int arr[], int min, int max)
         quickSort(arr, pi + 1, max);
     }
 }
-
 
 #endif //ORDENAMIENTOS_FUNCIONES_H
