@@ -30,11 +30,15 @@ int main() {
                 switch (m) {
                     case '1':
                         metBur(arreglo, 10000);
+                        getch();
                         free(arreglo);
+                        system("cls");
                         break;
                     case '2':
                         ordenar_seleccion(arreglo, 10000);
+                        getch();
                         free(arreglo);
+                        system("cls");
                         break;
                     case '3':
 
