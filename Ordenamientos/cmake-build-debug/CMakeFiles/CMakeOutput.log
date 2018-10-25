@@ -1,16 +1,16 @@
-The system is: Windows - 10.0.17134 - AMD64
+The system is: Windows - 6.1.7601 - AMD64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.15.26726/bin/Hostx86/x86/cl.exe 
+Compiler: C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/bin/cl.exe 
 Build flags: 
 Id flags:  
 
 The output was:
 0
-Compilador de optimizaci¢n de C/C++ de Microsoft (R) versi¢n 19.15.26730 para x86
-(C) Microsoft Corporation. Todos los derechos reservados.
+Compilador de optimizaci¢n de C/C++ de Microsoft (R) versi¢n 19.00.23918 para x86
+(C) Microsoft Corporation. Reservados todos los derechos.
 
 CMakeCCompilerId.c
-Microsoft (R) Incremental Linker Version 14.15.26730.0
+Microsoft (R) Incremental Linker Version 14.00.23918.0
 Copyright (C) Microsoft Corporation.  All rights reserved.
 
 /out:CMakeCCompilerId.exe 
@@ -21,44 +21,44 @@ Compilation of the C compiler identification source "CMakeCCompilerId.c" produce
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
 
-The C compiler identification is MSVC, found in "C:/Users/MrJua/Documents/GitHub/Algoritmos-de-Ordenamiento/Ordenamientos/cmake-build-debug/CMakeFiles/3.12.2/CompilerIdC/CMakeCCompilerId.exe"
+The C compiler identification is MSVC, found in "C:/Users/Linux2/Documents/GitHub/Algoritmos-de-Ordenamiento/Ordenamientos/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.exe"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: C:/Users/MrJua/Documents/GitHub/Algoritmos-de-Ordenamiento/Ordenamientos/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/Linux2/Documents/GitHub/Algoritmos-de-Ordenamiento/Ordenamientos/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"nmake" "/nologo" "cmTC_83c8d\fast"
-	"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_83c8d.dir\build.make /nologo -L                  CMakeFiles\cmTC_83c8d.dir\build
-Building C object CMakeFiles/cmTC_83c8d.dir/testCCompiler.c.obj
-	C:\PROGRA~2\MICROS~1\2017\COMMUN~1\VC\Tools\MSVC\1415~1.267\bin\Hostx86\x86\cl.exe @C:\Users\MrJua\AppData\Local\Temp\nm6CF7.tmp
+Run Build Command:"nmake" "/nologo" "cmTC_3dad8\fast"
+	"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\BIN\nmake.exe" -f CMakeFiles\cmTC_3dad8.dir\build.make /nologo -L                  CMakeFiles\cmTC_3dad8.dir\build
+Building C object CMakeFiles/cmTC_3dad8.dir/testCCompiler.c.obj
+	C:\PROGRA~2\MICROS~1.0\VC\bin\cl.exe @C:\Users\Linux2\AppData\Local\Temp\nm94C3.tmp
 testCCompiler.c
-Linking C executable cmTC_83c8d.exe
-	"C:\Program Files\JetBrains\CLion 2018.2.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_83c8d.dir --manifests  -- C:\PROGRA~2\MICROS~1\2017\COMMUN~1\VC\Tools\MSVC\1415~1.267\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_83c8d.dir\objects1.rsp @C:\Users\MrJua\AppData\Local\Temp\nm6E8E.tmp
+Linking C executable cmTC_3dad8.exe
+	"C:\Users\Linux2\AppData\Roaming\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_3dad8.dir --manifests  -- C:\PROGRA~2\MICROS~1.0\VC\bin\link.exe /nologo @CMakeFiles\cmTC_3dad8.dir\objects1.rsp @C:\Users\Linux2\AppData\Local\Temp\nm981E.tmp
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: C:/Users/MrJua/Documents/GitHub/Algoritmos-de-Ordenamiento/Ordenamientos/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/Linux2/Documents/GitHub/Algoritmos-de-Ordenamiento/Ordenamientos/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"nmake" "/nologo" "cmTC_a110b\fast"
-	"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_a110b.dir\build.make /nologo -L                  CMakeFiles\cmTC_a110b.dir\build
-Building C object CMakeFiles/cmTC_a110b.dir/CMakeCCompilerABI.c.obj
-	C:\PROGRA~2\MICROS~1\2017\COMMUN~1\VC\Tools\MSVC\1415~1.267\bin\Hostx86\x86\cl.exe @C:\Users\MrJua\AppData\Local\Temp\nm7217.tmp
+Run Build Command:"nmake" "/nologo" "cmTC_ccd1d\fast"
+	"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\BIN\nmake.exe" -f CMakeFiles\cmTC_ccd1d.dir\build.make /nologo -L                  CMakeFiles\cmTC_ccd1d.dir\build
+Building C object CMakeFiles/cmTC_ccd1d.dir/CMakeCCompilerABI.c.obj
+	C:\PROGRA~2\MICROS~1.0\VC\bin\cl.exe @C:\Users\Linux2\AppData\Local\Temp\nmA4D9.tmp
 CMakeCCompilerABI.c
-Linking C executable cmTC_a110b.exe
-	"C:\Program Files\JetBrains\CLion 2018.2.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_a110b.dir --manifests  -- C:\PROGRA~2\MICROS~1\2017\COMMUN~1\VC\Tools\MSVC\1415~1.267\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_a110b.dir\objects1.rsp @C:\Users\MrJua\AppData\Local\Temp\nm7286.tmp
+Linking C executable cmTC_ccd1d.exe
+	"C:\Users\Linux2\AppData\Roaming\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_ccd1d.dir --manifests  -- C:\PROGRA~2\MICROS~1.0\VC\bin\link.exe /nologo @CMakeFiles\cmTC_ccd1d.dir\objects1.rsp @C:\Users\Linux2\AppData\Local\Temp\nmA603.tmp
 
 
 
 
 Detecting C [] compiler features compiled with the following output:
-Change Dir: C:/Users/MrJua/Documents/GitHub/Algoritmos-de-Ordenamiento/Ordenamientos/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/Linux2/Documents/GitHub/Algoritmos-de-Ordenamiento/Ordenamientos/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"nmake" "/nologo" "cmTC_eb792\fast"
-	"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_eb792.dir\build.make /nologo -L                  CMakeFiles\cmTC_eb792.dir\build
-Building C object CMakeFiles/cmTC_eb792.dir/feature_tests.c.obj
-	C:\PROGRA~2\MICROS~1\2017\COMMUN~1\VC\Tools\MSVC\1415~1.267\bin\Hostx86\x86\cl.exe @C:\Users\MrJua\AppData\Local\Temp\nm7592.tmp
+Run Build Command:"nmake" "/nologo" "cmTC_460eb\fast"
+	"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\BIN\nmake.exe" -f CMakeFiles\cmTC_460eb.dir\build.make /nologo -L                  CMakeFiles\cmTC_460eb.dir\build
+Building C object CMakeFiles/cmTC_460eb.dir/feature_tests.c.obj
+	C:\PROGRA~2\MICROS~1.0\VC\bin\cl.exe @C:\Users\Linux2\AppData\Local\Temp\nmAD32.tmp
 feature_tests.c
-Linking C executable cmTC_eb792.exe
-	"C:\Program Files\JetBrains\CLion 2018.2.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_eb792.dir --manifests  -- C:\PROGRA~2\MICROS~1\2017\COMMUN~1\VC\Tools\MSVC\1415~1.267\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_eb792.dir\objects1.rsp @C:\Users\MrJua\AppData\Local\Temp\nm75F1.tmp
+Linking C executable cmTC_460eb.exe
+	"C:\Users\Linux2\AppData\Roaming\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_460eb.dir --manifests  -- C:\PROGRA~2\MICROS~1.0\VC\bin\link.exe /nologo @CMakeFiles\cmTC_460eb.dir\objects1.rsp @C:\Users\Linux2\AppData\Local\Temp\nmAE5C.tmp
 
 
     Feature record: C_FEATURE:1c_function_prototypes

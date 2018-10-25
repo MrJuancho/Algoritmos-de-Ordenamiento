@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/MrJua/Documents/GitHub/Algoritmos-de-Ordenamiento/Ordenamientos
+# Install script for directory: C:/Users/Linux2/Documents/GitHub/Algoritmos-de-Ordenamiento/Ordenamientos
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/MrJua/Documents/GitHub/Algoritmos-de-Ordenamiento/Ordenamientos/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Linux2/Documents/GitHub/Algoritmos-de-Ordenamiento/Ordenamientos/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,3 +1,3 @@
-C:/Users/MrJua/Documents/GitHub/Algoritmos-de-Ordenamiento/Ordenamientos/cmake-build-debug/CMakeFiles/Ordenamientos.dir
-C:/Users/MrJua/Documents/GitHub/Algoritmos-de-Ordenamiento/Ordenamientos/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/MrJua/Documents/GitHub/Algoritmos-de-Ordenamiento/Ordenamientos/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Linux2/Documents/GitHub/Algoritmos-de-Ordenamiento/Ordenamientos/cmake-build-debug/CMakeFiles/Ordenamientos.dir
+C:/Users/Linux2/Documents/GitHub/Algoritmos-de-Ordenamiento/Ordenamientos/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Linux2/Documents/GitHub/Algoritmos-de-Ordenamiento/Ordenamientos/cmake-build-debug/CMakeFiles/rebuild_cache.dir

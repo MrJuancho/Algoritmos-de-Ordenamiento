@@ -35,19 +35,19 @@ NULL=nul
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.2.4\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Users\Linux2\AppData\Roaming\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2018.2.4\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "C:\Users\Linux2\AppData\Roaming\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\MrJua\Documents\GitHub\Algoritmos-de-Ordenamiento\Ordenamientos
+CMAKE_SOURCE_DIR = C:\Users\Linux2\Documents\GitHub\Algoritmos-de-Ordenamiento\Ordenamientos
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\MrJua\Documents\GitHub\Algoritmos-de-Ordenamiento\Ordenamientos\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Linux2\Documents\GitHub\Algoritmos-de-Ordenamiento\Ordenamientos\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles\Ordenamientos.dir\depend.make
@@ -60,21 +60,21 @@ include CMakeFiles\Ordenamientos.dir\flags.make
 
 CMakeFiles\Ordenamientos.dir\main.c.obj: CMakeFiles\Ordenamientos.dir\flags.make
 CMakeFiles\Ordenamientos.dir\main.c.obj: ..\main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\MrJua\Documents\GitHub\Algoritmos-de-Ordenamiento\Ordenamientos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Ordenamientos.dir/main.c.obj"
-	C:\PROGRA~2\MICROS~1\2017\COMMUN~1\VC\Tools\MSVC\1415~1.267\bin\Hostx86\x86\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoCMakeFiles\Ordenamientos.dir\main.c.obj /FdCMakeFiles\Ordenamientos.dir\ /FS -c C:\Users\MrJua\Documents\GitHub\Algoritmos-de-Ordenamiento\Ordenamientos\main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Linux2\Documents\GitHub\Algoritmos-de-Ordenamiento\Ordenamientos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Ordenamientos.dir/main.c.obj"
+	C:\PROGRA~2\MICROS~1.0\VC\bin\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoCMakeFiles\Ordenamientos.dir\main.c.obj /FdCMakeFiles\Ordenamientos.dir\ /FS -c C:\Users\Linux2\Documents\GitHub\Algoritmos-de-Ordenamiento\Ordenamientos\main.c
 <<
 
 CMakeFiles\Ordenamientos.dir\main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Ordenamientos.dir/main.c.i"
-	C:\PROGRA~2\MICROS~1\2017\COMMUN~1\VC\Tools\MSVC\1415~1.267\bin\Hostx86\x86\cl.exe > CMakeFiles\Ordenamientos.dir\main.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\MrJua\Documents\GitHub\Algoritmos-de-Ordenamiento\Ordenamientos\main.c
+	C:\PROGRA~2\MICROS~1.0\VC\bin\cl.exe > CMakeFiles\Ordenamientos.dir\main.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Linux2\Documents\GitHub\Algoritmos-de-Ordenamiento\Ordenamientos\main.c
 <<
 
 CMakeFiles\Ordenamientos.dir\main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Ordenamientos.dir/main.c.s"
-	C:\PROGRA~2\MICROS~1\2017\COMMUN~1\VC\Tools\MSVC\1415~1.267\bin\Hostx86\x86\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\Ordenamientos.dir\main.c.s /c C:\Users\MrJua\Documents\GitHub\Algoritmos-de-Ordenamiento\Ordenamientos\main.c
+	C:\PROGRA~2\MICROS~1.0\VC\bin\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\Ordenamientos.dir\main.c.s /c C:\Users\Linux2\Documents\GitHub\Algoritmos-de-Ordenamiento\Ordenamientos\main.c
 <<
 
 # Object files for target Ordenamientos
@@ -87,9 +87,9 @@ Ordenamientos_EXTERNAL_OBJECTS =
 Ordenamientos.exe: CMakeFiles\Ordenamientos.dir\main.c.obj
 Ordenamientos.exe: CMakeFiles\Ordenamientos.dir\build.make
 Ordenamientos.exe: CMakeFiles\Ordenamientos.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\MrJua\Documents\GitHub\Algoritmos-de-Ordenamiento\Ordenamientos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable Ordenamientos.exe"
-	"C:\Program Files\JetBrains\CLion 2018.2.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\Ordenamientos.dir --manifests  -- C:\PROGRA~2\MICROS~1\2017\COMMUN~1\VC\Tools\MSVC\1415~1.267\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\Ordenamientos.dir\objects1.rsp @<<
- /out:Ordenamientos.exe /implib:Ordenamientos.lib /pdb:C:\Users\MrJua\Documents\GitHub\Algoritmos-de-Ordenamiento\Ordenamientos\cmake-build-debug\Ordenamientos.pdb /version:0.0  /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Linux2\Documents\GitHub\Algoritmos-de-Ordenamiento\Ordenamientos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable Ordenamientos.exe"
+	"C:\Users\Linux2\AppData\Roaming\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\Ordenamientos.dir --manifests  -- C:\PROGRA~2\MICROS~1.0\VC\bin\link.exe /nologo @CMakeFiles\Ordenamientos.dir\objects1.rsp @<<
+ /out:Ordenamientos.exe /implib:Ordenamientos.lib /pdb:C:\Users\Linux2\Documents\GitHub\Algoritmos-de-Ordenamiento\Ordenamientos\cmake-build-debug\Ordenamientos.pdb /version:0.0  /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<
 
 # Rule to build all files generated by this target.
@@ -102,6 +102,6 @@ CMakeFiles\Ordenamientos.dir\clean:
 .PHONY : CMakeFiles\Ordenamientos.dir\clean
 
 CMakeFiles\Ordenamientos.dir\depend:
-	$(CMAKE_COMMAND) -E cmake_depends "NMake Makefiles" C:\Users\MrJua\Documents\GitHub\Algoritmos-de-Ordenamiento\Ordenamientos C:\Users\MrJua\Documents\GitHub\Algoritmos-de-Ordenamiento\Ordenamientos C:\Users\MrJua\Documents\GitHub\Algoritmos-de-Ordenamiento\Ordenamientos\cmake-build-debug C:\Users\MrJua\Documents\GitHub\Algoritmos-de-Ordenamiento\Ordenamientos\cmake-build-debug C:\Users\MrJua\Documents\GitHub\Algoritmos-de-Ordenamiento\Ordenamientos\cmake-build-debug\CMakeFiles\Ordenamientos.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "NMake Makefiles" C:\Users\Linux2\Documents\GitHub\Algoritmos-de-Ordenamiento\Ordenamientos C:\Users\Linux2\Documents\GitHub\Algoritmos-de-Ordenamiento\Ordenamientos C:\Users\Linux2\Documents\GitHub\Algoritmos-de-Ordenamiento\Ordenamientos\cmake-build-debug C:\Users\Linux2\Documents\GitHub\Algoritmos-de-Ordenamiento\Ordenamientos\cmake-build-debug C:\Users\Linux2\Documents\GitHub\Algoritmos-de-Ordenamiento\Ordenamientos\cmake-build-debug\CMakeFiles\Ordenamientos.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles\Ordenamientos.dir\depend
 

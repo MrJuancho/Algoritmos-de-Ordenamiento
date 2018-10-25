@@ -37,6 +37,7 @@ void metBur(int * const arreglo,const int tamanio)
 	{
 		printf("%d\t",arreglo[c]);
 	}
+    printf("Se necesitaron %d iteraciones para lograr el ordenamiento.\n",pasada);
 }
 
 void ordenar_seleccion(int a[],int n)
@@ -62,6 +63,7 @@ void ordenar_seleccion(int a[],int n)
 	{
 		printf("%d\t",a[q]);
 	}
+	printf("Se necesitaron %d iteraciones para lograr el ordenamiento.\n",n);
 }
 
 void intercambia( int *ptrElemento1, int *ptrElemento2 ) {
@@ -88,6 +90,7 @@ void insercion(int a[],int tam)
     {
         printf("%d\t",a[k]);
     }printf("\n");
+    printf("Se necesitaron %d iteraciones para lograr el ordenamiento.\n",j);
 }
 
 void shell(int a[],int n)
@@ -115,6 +118,7 @@ void shell(int a[],int n)
         printf("%d\t",a[q]);
     }
     printf("\n");
+    printf("Se necesitaron %d iteraciones para lograr el ordenamiento.\n",j);
 }
 
 

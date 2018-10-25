@@ -58,6 +58,7 @@ int main() {
                         break;
                     case '4':
                         {
+                            int iteraciones = arreglo[9999];
                             clock_t quick_sort = clock();
                             quickSort(arreglo,0,10000);
                             tiempos[3] = ((double)clock() - quick_sort) / CLOCKS_PER_SEC;
@@ -67,6 +68,7 @@ int main() {
                                 printf("%d\t",arreglo[j]);
                             }
                             printf("\n");
+                            printf("Se necesitaron %d iteraciones para lograr el ordenamiento.\n",iteraciones);
                             printf("Tiempo transcurrido: %.5f\n", tiempos[3]);
                             system("pause");
                             system("cls");
