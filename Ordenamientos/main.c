@@ -6,6 +6,7 @@
 int main() {
     int *arreglo;
     double tiempos[5];
+    char * nombres[10] = {"Burbuja","Seleccion","Inserccion","QuickSort","Shell"};
     int i;
     char m;
 
@@ -73,20 +74,34 @@ int main() {
                     case '5':
                         {
                             clock_t shell_t = clock();
-                            tiempos[4] = ((double)clock() - shell_t) / CLOCKS_PER_SEC;
                             shell(arreglo, 10000);
-                            printf("Tiempo transcurrido: %.15f\n", tiempos[4]);
+                            tiempos[4] = ((double)clock() - shell_t) / CLOCKS_PER_SEC;
+                            printf("Tiempo transcurrido: %.5f\n", tiempos[4]);
                             system("pause");
                             free(arreglo);
                             system("cls");
                         }
                         break;
                     case '0':
-                        printf("Adius");
+                        printf("\nTiempos sin orden : \n");
+                        for (int k = 0; k < 5; ++k) {
+                            printf("Tiempo %s : %.5f\n",nombres[k],tiempos[k]);
+                        }
+                        ordsel(tiempos,5);
+                        printf("\nTiempos Ordenados:\n");
+                        for (int l = 0; l < 5; ++l) {
+                            printf("Tiempo %d : %.5f\n",(l+1),tiempos[l]);
+                        }
+                        printf("MADE BY:\n"
+                               "Alvarez Garcia Elian Alexander\n"
+                               "Calderon Davila Juan Carlos\n"
+                               "Catarino Corralco Carlos Alberto\n"
+                               "Gamboa del Angel Alan Eduardo\n");
                         system("pause");
                         break;
                     default:
-                        printf("Intenta una opcion valida pequenio niels");
+                        printf("Intenta una opcion valida.");
+                        system("pause");
                         break;
                 }
         }
