@@ -12,7 +12,7 @@ void menu_i(){
            "3 >> Ordenamiento por Inserccion.\n"
            "4 >> Ordenamiento QuickSort.\n"
            "5 >> Ordenamiento Shell.\n"
-           "0 >> Salir.\n"
+           "0 >> Salir y Comparar.\n"
            "Ingresa una opcion : ");
 }
 
@@ -144,5 +144,21 @@ void quickSort(int * const arr, int min, int max)
         quickSort(arr, pi + 1, max);
     }
 }
+
+void ordsel(double * x, double n){
+
+    int minimo=0;
+    int i,j;
+    double cambio;
+    for(i=0 ; i<n-1 ; i++)
+    {
+        minimo=i;
+        for(j=i+1 ; j<n ; j++)
+            if (x[minimo] > x[j])
+                minimo=j;
+        cambio=x[minimo];
+        x[minimo]=x[i];
+        x[i]=cambio;
+    }}
 
 #endif //ORDENAMIENTOS_FUNCIONES_H
